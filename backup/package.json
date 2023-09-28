@@ -1,0 +1,45 @@
+{
+    "name": "prettiert",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "prepare": "husky install",
+        "lint-staged": "lint-staged"
+    },
+    "lint-staged": {
+        "*.{js,ts,vue,jsx,tsx}": [
+            "prettier --write",
+            "eslint --cache --fix",
+            "git add"
+        ]
+    },
+    "husky": {
+        "hooks": {
+            "commit-msg": "commitlint -e $HUSKY_GIT_PARAMS",
+            "pre-commit": "lint-staged" 
+        }
+    },    
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Kiki-Q/prettierT.git"
+    },
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/Kiki-Q/prettierT/issues"
+    },
+    "homepage": "https://github.com/Kiki-Q/prettierT#readme",
+    "devDependencies": {
+        "@commitlint/config-conventional": "^17.7.0",
+        "@typescript-eslint/eslint-plugin": "^6.7.3",
+        "@typescript-eslint/parser": "^6.7.3",
+        "commitlint": "^17.7.1",
+        "eslint": "^8.50.0",
+        "eslint-config-prettier": "^9.0.0",
+        "eslint-plugin-prettier": "^5.0.0",
+        "husky": "^8.0.3",
+        "prettier": "^3.0.3"
+    }
+}
