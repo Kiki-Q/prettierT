@@ -12,6 +12,27 @@
     "prepare": "husky install",
     "lint-staged": "lint-staged"
   },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx}": [
+      "eslint --fix",
+      "prettier --write"
+    ],
+    "*.json": [
+      "prettier --write"
+    ],
+    "*.vue": [
+      "eslint --fix",
+      "prettier --write",
+      "stylelint --fix"
+    ],
+    "*.{scss,less,html}": [
+      "stylelint --fix",
+      "prettier --write"
+    ],
+    "*.md": [
+      "prettier --write"
+    ]
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Kiki-Q/prettierT.git"
@@ -32,12 +53,6 @@
     "eslint-plugin-prettier": "^5.0.0",
     "husky": "^8.0.3",
     "lint-staged": "^14.0.1",
-    "postcss": "^8.4.30",
-    "postcss-html": "^1.5.0",
-    "prettier": "^3.0.3",
-    "stylelint": "^15.10.3",
-    "stylelint-config-clean-order": "^5.2.0",
-    "stylelint-order": "^6.0.3",
-    "stylelint-prettier": "^4.0.2"
+    "prettier": "^3.0.3"
   }
 }
