@@ -4,7 +4,11 @@
   "description": "",
   "main": "test.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint --ext .js --ext .jsx --ext .vue src/",
+    "lint-fix": "eslint --fix --ext .js --ext .jsx --ext .vue src/",
+    "format": "prettier --write \"./**/*.{html,vue,ts,js,json,md,less,sass,scss,sty}\"",
+    "lint:style": "stylelint \"./**/*.{css,less,vue,html,sass,scss}\" --fix"
   },
   "repository": {
     "type": "git",
