@@ -1,0 +1,6 @@
+build
+coverage
+
+# dependencies
+/node_modules
+/copy
