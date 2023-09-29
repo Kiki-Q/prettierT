@@ -30,7 +30,8 @@ module.exports = {
     // 自定义测试：0是忽略，1是警告，2是报错
     // quotes: 2,
     // semi: 1,
-    // 'no-console': 1,
     // 'space-before-function-paren': 0,
+    // "no-console": process.env.NODE_ENV === "production" ? "warn" : "off",
+    //"no-debugger": process.env.NODE_ENV === "production" ? "warn" : "off"
   },
 };
