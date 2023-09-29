@@ -1,4 +1,13 @@
 #
+## 规范:目前有三个流行方案，分别是 Airbnb 、Standard、Google，严格程度对比是 Airbnb > Google > Standard，所以普遍使用Airbnb的多
+### Airbnb
+```
+npm install eslint-plugin-jsx-a11y --save-dev
+npm install eslint-plugin-import --save-dev
+npm install eslint-config-airbnb --save-dev
+
+extends: 'airbnb',
+```
 ## rules
 ```
     "semi": [2, "always"], // 语句强制分号结尾

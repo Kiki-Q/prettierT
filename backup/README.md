@@ -21,6 +21,7 @@ eslintrc、prettier的plugin、prettierrc会冲突，需要设置（出一套配
     // },
 ],
 ```
+### 常见规范怎么选
 
 ## 问题
 ### pre-commit的hook怎么看

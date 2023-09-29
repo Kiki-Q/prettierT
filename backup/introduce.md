@@ -131,7 +131,10 @@ npm install sass sass-loader stylelint stylelint-config-prettier stylelint-confi
 ```
 "lint:style": "stylelint \"./**/*.{css,less,vue,html,sass,scss}\" --fix",
 ```
+## Commitizen: git message工具
+```
 
+```
 
-### 遇到的问题
+## 遇到的问题
 #### 1.现在搜索安装配置大多文章如此[本人vscode安装后按规范也提交不了](https://zhuanlan.zhihu.com/p/513741947)，可用的[简单可行，不知道是不是husky版本问题](https://blog.csdn.net/qq_21197033/article/details/128545357)
